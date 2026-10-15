@@ -110,10 +110,6 @@ All findings below come from the queries in this project (query IDs in brackets)
 └── README.md
 ```
 
-> **Note:** `sales.csv` has about 6.7 million rows and exceeds GitHub's 100 MB file limit, so it is not included in this repository. See the "How to Run" section for how to get the data.
-
----
-
 ## How to Run
 
 1. Install [PostgreSQL](https://www.postgresql.org/download/) and a client such as pgAdmin or DBeaver.
