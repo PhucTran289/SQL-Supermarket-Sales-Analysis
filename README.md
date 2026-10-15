@@ -36,10 +36,10 @@ Seven related tables, loaded from CSV files:
 
 **Schema:**
 
-```
+
 <img width="665" height="489" alt="image" src="https://github.com/user-attachments/assets/6c5c354e-d2d9-4073-919a-54a7a9d10495" />
 
-```
+
 
 ---
 
