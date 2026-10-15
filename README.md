@@ -88,7 +88,7 @@ All findings below come from the queries in this project (query IDs in brackets)
 ### Scenario 2: Product portfolio
 - **Demand is almost identical across products, so price decides revenue.** All 452 products sold between 187.8K and 197.8K units (a spread of about 5%), yet product revenue ranges from 8.4K to 18.7M, a gap of about 2,200 times [2.1b, 2.1c]. The top 5 and bottom 5 products sell the same volume (191K to 196K units). Correlation between units sold and revenue is only 0.099, and 0.083 between units and price [2.2a]. At category level it ranges from -0.19 (Shell fish) to 0.32 (Snails) [2.2b].
 - **Half of the products generate about three quarters of revenue.** The two higher-price groups (226 products) bring in 74.3% of revenue, while the two lower-price groups (226 products) bring in 25.7% [2.2d]. Splitting by demand instead makes almost no difference (52.5% vs 47.5%).
-- **Some high-volume products are sold at very low prices.** Ten products are in the top 20% by volume but the bottom 20% by net price, for example Apricots - Halves (194K units, net price 0.36, revenue only 70K) [2.2c]. They are candidates for a price review. The effective discount is about 3% on every product (2.92% to 3.12%), so the discount is flat and not used to target specific items.
+- **Some high-volume products are sold at very low prices.** Ten products are in the top 20% by volume but the bottom 20% by net price, for example Apricots - Halves (194K units, net price 0.36, revenue only 70K) [2.2c]. They are candidates for a price review. The effective discount is about 3% on every product (2.79% to 3.19% across all 452 products), so the discount is flat and not used to target specific items.
 
 ### Scenario 3: Customer behavior
 - **Customer segments differ by order value, not by frequency.** Customers place a similar number of orders in every segment (61 to 75), but average order value is about 915 to 980 for VIP and Big-spender customers versus about 300 to 360 for the other two segments [3.1b]. To grow revenue per customer, upselling to higher-priced products is more promising than pushing visit frequency, which matches the product-level finding.
@@ -113,7 +113,7 @@ All findings below come from the queries in this project (query IDs in brackets)
 ## How to Run
 
 1. Install [PostgreSQL](https://www.postgresql.org/download/) and a client such as pgAdmin or DBeaver.
-2. Place the CSV files in a local folder.
+2. Download the data from the link in the Dataset section and place the CSV files in a local folder.
 3. Open `Project_1_SQL.sql` and update the file paths in each `COPY ... FROM '...'` statement to match your folder.
 4. Create a database (`CREATE DATABASE Project_SQL_1;`), connect to it, and run the script from top to bottom.
 5. Run the analysis queries in each scenario section individually to see the results.
