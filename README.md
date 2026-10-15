@@ -33,20 +33,19 @@ Seven related tables, loaded from CSV files:
 | `cities` | 96 | City reference data |
 | `countries` | 206 | Country reference data |
 | `categories` | 11 | Product categories |
+   
+**Download:** The full `sales.csv` (about 517 MB, 6.7 million rows) is too large for GitHub.
+Download it here: [sales.csv (Google Drive)](https://drive.google.com/drive/folders/1SotMICgGYQJza04YzrmD9uERiCvgB8iZ?usp=sharing).
 
 **Schema:**
 
-
 <img width="665" height="489" alt="image" src="https://github.com/user-attachments/assets/6c5c354e-d2d9-4073-919a-54a7a9d10495" />
-
-
 
 ---
 
 ## Data Preparation
 
 - Created tables with **primary and foreign key constraints**, then loaded data using `COPY`.
-- Created `sales_backup` before modifying any data.
 - Found rows with a missing `SalesDate` (less than 1% of the data) and removed them.
 - The `TotalPrice` column was `0` for every row, so it was **recalculated** as `Price × Quantity × (1 − Discount)`.
 - Fixed a typo in a column name (`CategogyName` → `CategoryName`).
